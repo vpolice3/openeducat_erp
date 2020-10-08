@@ -1,9 +1,9 @@
-pipeline {
-  agent any
-  stages {
-    stage('build') {
-      steps{
-     sh'git branch: '13.0', credentialsId: 'github credentials', url: 'https://github.com/vpolice3/openeducat_erp.git''
+pipeline{
+agent any
+stages{
+  stage('Build'){
+    steps{
+      sh ' git clone 'https://github.com/vpolice3/openeducat_erp.git''
       }
     }
   }
