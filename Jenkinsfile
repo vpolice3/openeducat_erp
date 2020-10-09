@@ -1,9 +1,7 @@
-pipeline{
-agent any
-stages{
-  stage('Build'){
-    steps{
-      
+timeout(time:60, unit:'MINUTES'){
+  node{
+    stage('Checkout'){
+      sh ''
     }
   }
 }
