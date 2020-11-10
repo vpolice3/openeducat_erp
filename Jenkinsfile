@@ -1,11 +1,15 @@
-pipeline{
+pipeline {
   agent any
   stages{
-    stage('Checkout'){
-      echo "Git Checkout"
+    stage ('Build') {
+      steps{
+        echo "Building Project"
+      }
     }
-    stage('Build'){
-      echo "Build Project"
+    stage ('Archive') {
+      steps{
+        echo "Archiving Project"
+      }
     }
   }
 }
