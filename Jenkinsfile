@@ -4,7 +4,7 @@ pipeline{
     stage('Checkout'){
       echo "Git Checkout"
     }
-    stage(''Build'){
+    stage('Build'){
       echo "Build Project"
     }
   }
